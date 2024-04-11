@@ -1,0 +1,173 @@
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins" sans-serif;
+}
+
+.card {
+  background-color: #fff;
+  width: 580px;
+  height: 491px;
+  margin-top: 71px;
+  left: 300px;
+  padding: 56px 50px;
+  gap: 0px;
+  border-radius: 24px 24px 200px 24px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.div--h4 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+}
+.div--h4 h4 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 16px;
+  opacity: 0.6;
+  font-weight: 700;
+}
+.div--h4 input {
+  width: 120px;
+  height: 60px;
+  border-radius: 8px;
+  font-weight: 800;
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid #b6acac;
+}
+.div--h4 input:hover {
+  border: 2px solid #854dff;
+}
+
+h6 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #ff5959;
+}
+.div--btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.hr2 {
+  display: none;
+}
+.hr1 {
+  width: 500px;
+  height: 0.5px;
+  gap: 0px;
+  opacity: 0.6px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #854dff;
+  border-radius: 50px;
+  border: none;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #151515;
+}
+.result {
+  width: 510px;
+  height: 242px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+div h1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-align: left;
+  padding: 0%;
+  margin: 0%;
+  border: none;
+  margin-top: -148px;
+  color: #151515;
+  cursor: pointer;
+}
+h1 p {
+  font-family: Poppins;
+  font-style: italic;
+  color: #8e59ff;
+  cursor: pointer;
+}
+h4 h6 {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #ff5959;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .div--h4 {
+    margin-bottom: 30px;
+  }
+
+  .div--h4 input {
+    max-width: 95px;
+  }
+  .div--btn {
+    margin-top: 10px;
+  }
+
+  .hr1 {
+    max-width: 140px;
+  }
+
+  .hr2 {
+    width: 140px;
+    height: 0.5px;
+    gap: 0px;
+    opacity: 0.6px;
+    display: block;
+  }
+
+  .result {
+    max-width: 100%;
+    margin-top: 150px;
+    gap: 10px;
+  }
+
+  div h1 {
+    font-size: 57px;
+    gap: 20px;
+  }
+}

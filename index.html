@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>IMTIHON_1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="div--h4">
+        <h4 id="day">
+          DAY <input type="text" id="dayInput" placeholder="DD" />
+          <span id="dayErrorMessage"></span>
+        </h4>
+        <h4 id="month">
+          MONTH <input type="text" id="monthInput" placeholder="MM" />
+          <span id="monthErrorMessage"></span>
+        </h4>
+        <h4 id="year">
+          YEAR <input type="text" id="yearInput" placeholder="YYYY" />
+          <span id="yearErrorMessage"></span>
+        </h4>
+      </div>
+      <div class="div--btn">
+        <span><hr class="hr1" /></span>
+        <span>
+          <button id="calculateButton">
+            <img src="./images/Frame.svg" alt="" />
+          </button>
+        </span>
+        <span><hr class="hr2" /></span>
+      </div>
+      <div class="result">
+        <h1>
+          <p id="years">--</p>
+          YEARS
+        </h1>
+        <h1>
+          <p id="months">--</p>
+          MONTHS
+        </h1>
+        <h1>
+          <p id="days">--</p>
+          DAYS
+        </h1>
+      </div>
+    </div>
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>

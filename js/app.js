@@ -17,6 +17,11 @@ button.addEventListener("click", function () {
   const monthsOutput = document.getElementById("months");
   const daysOutput = document.getElementById("days");
 
+  function playMusic() {
+    const audio = new Audio("./sound.mp3");
+    audio.play();
+  }
+
   const maxDays = new Date(year, month, 0).getDate();
   const isValidDate =
     day >= 1 &&
@@ -30,7 +35,6 @@ button.addEventListener("click", function () {
     if (day < 1 || day > maxDays) {
       dayInput.style.borderColor = "red";
       dayErrorMessage.textContent = "Must be a valid day";
-      // dayErrorMessage.style.fontStyle = "italic";
       dayErrorMessage.style.color = "red";
       day1.style.color = "red";
     } else {
@@ -41,9 +45,7 @@ button.addEventListener("click", function () {
     if (month < 1 || month > 12) {
       monthInput.style.borderColor = "red";
       monthErrorMessage.textContent = "Must be a valid month";
-      dayErrorMessage.style.fontStyle =
-        // dayErrorMessage.style.fontStyle = "italic";
-        monthErrorMessage.style.color = "red";
+      monthErrorMessage.style.color = "red";
       month1.style.color = "red";
     } else {
       monthInput.style.borderColor = "";
@@ -53,7 +55,6 @@ button.addEventListener("click", function () {
     if (year < 1 || year > 2024) {
       yearInput.style.borderColor = "red";
       yearErrorMessage.textContent = "Must be a valid year";
-      // dayErrorMessage.style.fontStyle = "italic";
       yearErrorMessage.style.color = "red";
       year1.style.color = "red";
     } else {
@@ -82,5 +83,7 @@ button.addEventListener("click", function () {
     yearsOutput.textContent = years < 10 ? "0" + years : years;
     monthsOutput.textContent = months < 10 ? "0" + months : months;
     daysOutput.textContent = days < 10 ? "0" + days : days;
+
+    playMusic();
   }
 });

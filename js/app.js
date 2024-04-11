@@ -18,7 +18,7 @@ button.addEventListener("click", function () {
   const daysOutput = document.getElementById("days");
 
   function playMusic() {
-    const audio = new Audio("./sound.mp3");
+    const audio = new Audio("./message.mp3");
     audio.play();
   }
 
